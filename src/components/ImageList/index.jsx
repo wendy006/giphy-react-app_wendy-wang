@@ -13,7 +13,14 @@ export const ImageList = () => {
 	return <div className='image-list'>
 		<LoadingSpinner isLoading={isAppLoading} >
 			{imageList?.map((image) => {
-				return <img key={image.id} src={image.images.original.url} alt={image.title} />
+				return (
+					
+					<div className='image-bg'>
+					<img className='img-rect'  key={image.id} src={image.images.original.url} alt={image.title} /> 
+					{(image.user && image.user.avatar_url) && (<img className='avatar-circle' key={image.id} src={image.user.avatar_url} alt={""} />)} 
+					 
+					</div>
+				)
 			})}
 		</LoadingSpinner>
 	</div>
