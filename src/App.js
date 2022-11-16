@@ -1,17 +1,16 @@
-
 import { ImageList, SearchBar } from "./components";
 import { AppContextProvider } from "./context/appContext";
-import './App.css';
+import "./App.css";
 
 function App() {
-	return (
-		<div className="App">
-			<AppContextProvider>
-				<SearchBar />
-				<ImageList />
-			</AppContextProvider>
-		</div>
-	);
+  return (
+    <div className="App">
+      <AppContextProvider>
+        <SearchBar />
+        <ImageList />
+      </AppContextProvider>
+    </div>
+  );
 }
 
 export default App;
