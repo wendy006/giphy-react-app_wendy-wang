@@ -1,28 +1,21 @@
 .image-list {
     display: flex;
     flex-wrap: wrap;
-    // justify-content: space-between;
-    justify-content: space-around;
-    // img {
-    //     margin-bottom: 16px;
-    // }
+    justify-content: space-around; 
     div {
         padding-bottom: 16px;
     }
 }
 
 .image-bg {
-    position:relative;
-    // background-color: red;
- 
-
+    position:relative; 
 }
 
 .img-rect {
-    // position:absolute;  
     margin-right: 30px;
     margin-top: 30px; 
 }
+
 .avatar-circle {
     position:absolute; 
     width: 50px;

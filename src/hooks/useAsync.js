@@ -1,4 +1,3 @@
-import { ImageListItemBar } from "@material-ui/core";
 import { useCallback, useEffect, useState } from "react";
 import { ASYNC_STATUS } from "../constants/LoadingStates";
 import { useAppContext } from "../context/appContext";

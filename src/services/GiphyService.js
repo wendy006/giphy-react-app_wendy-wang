@@ -1,5 +1,4 @@
-
-const GIPHY_API = 'vzpey49uCvEE9pwjCZVNlY0udKcJ0Mmq'
+const GIPHY_API = require('../env.jsx').API_KEY;
 class GiphyService {
 	static async listGifs(onSuccess, onError, onFinal) {
 		try {
